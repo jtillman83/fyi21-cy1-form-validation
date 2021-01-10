@@ -10,9 +10,9 @@ const emailErr = email.nextElementSibling
 const passwordErr = password.nextElementSibling
 const password2Err = password2.nextElementSibling
 
-console.log(emailErr)
-console.log(passwordErr)
-console.log(password2Err)
+// console.log(emailErr)
+// console.log(passwordErr)
+// console.log(password2Err)
 
 
 // 2. Add event / modification
@@ -33,7 +33,7 @@ regForm.addEventListener('click', function (e) {
   // 2. Check if the value is empty
   if (email.value === '') {
     // 3. If empty, give user some feedback
-    usernameErr.className = 'block bg-red-500 text-white'
+    emailErr.className = 'block bg-red-500 text-white'
   } else {
     console.log('sending to server')
   }
@@ -42,7 +42,7 @@ regForm.addEventListener('click', function (e) {
   // 2. Check if the value is empty
   if (password.value === '') {
     // 3. If empty, give user some feedback
-    usernameErr.className = 'block bg-red-500 text-white'
+    passwordErr.className = 'block bg-red-500 text-white'
   } else {
     console.log('sending to server')
   }
@@ -51,7 +51,7 @@ regForm.addEventListener('click', function (e) {
   // 2. Check if the value is empty
   if (password2.value === '') {
     // 3. If empty, give user some feedback
-    usernameErr.className = 'block bg-red-500 text-white'
+    password2Err.className = 'block bg-red-500 text-white'
   } else {
     console.log('sending to server')
   }
